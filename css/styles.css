@@ -10,11 +10,15 @@ body {
     height: 100vh
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 .bg-green {
     background-color: #1CD1B0;
 }
 
-.bg-gray{
+.bg-gray {
     background-color: #888888;
     color: #FFFFFF;
 
@@ -33,6 +37,34 @@ footer {
 
 header {
     height: 103px;
+}
+
+.bg-dark {
+    height: 40px;
+    background: #001D2D;
+
+}
+
+.bg-dark nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    height: auto;
+
+
+}
+
+.bg-dark nav ul li {
+    margin: 0px 15px;
+    line-height: 39px;
+
+}
+
+.bg-dark nav ul li a {
+
+    text-decoration: none;
+    color: #FFFFFF;
+
 }
 
 .box-green {
@@ -56,7 +88,7 @@ header {
     font-size: 30px;
 }
 
-section{
+section {
     display: flex;
     flex-direction: column;
     height: 80%;
@@ -64,8 +96,9 @@ section{
 
 }
 
-.cards{
+.cards {
     flex-direction: row;
+    justify-content: center;
 }
 
 
@@ -76,13 +109,15 @@ Cards
 */
 
 .card {
-    display: inline-block;
+
     width: 300px;
-    height: 529px;
+    height: auto;
     margin: 18px;
     position: relative;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+
 
 .icon-heart {
     position: absolute;
@@ -131,16 +166,97 @@ Cards
 }
 
 .btn {
-    border: none;
     font-size: 15px;
-    line-height: 18px;
     color: #F3F3F3;
     width: 128.78px;
     height: 48.52px;
+    margin: 0px auto;
     background: #00669F;
+    border-radius: 0px;
+}
+
+.btn a {
+    color: #F3F3F3;
 }
 
 /* END CARDS */
+
+/* Detail Section */
+.detail-section {
+    height: 90vh;
+    background-image: url(../img/bg-1.png);
+}
+
+.card-detail {
+    position: relative;
+    width: 546px;
+}
+
+.avatar-detail {
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    top: -45px;
+    left: 0px;
+    width: 159px;
+    margin: 0px auto;
+}
+
+.icon-heart-detail{
+    width :40px;
+    position: relative;
+    top: 80px;
+    left: 20px;
+}
+
+.content-detail{
+    border-radius: 45px;
+    background-color: #F3F3F3;
+    height: 456px;
+    padding-top: 90px;
+}
+
+.detail-guns{
+    display: flex;
+    justify-content: center;
+}
+
+.detail-guns div{
+    margin: 0px 25px;
+}
+
+.detail-footer-card{
+    background-color: #2C0187;
+    height: 87px;
+    border-radius: 0px 0px 45px 45px;
+
+}
+
+.detail-footer-card a{
+    color: #FFFFFF;
+   font-size: 20px;
+   line-height: 80px;
+
+}
+
+
+
+.title-content-detail a{
+    text-decoration: underline;
+    font-size: 35px;
+    margin-top: 15px;
+}
+
+
+
+
+
+
+
+/* End detail secftion */
+
+
+
 
 article {
     display: flex;
@@ -157,7 +273,8 @@ h1 {
     margin-bottom: 51px;
 }
 
-input, select {
+input,
+select {
     margin-bottom: 20px;
     width: 100%;
     height: auto;
@@ -165,32 +282,33 @@ input, select {
     padding: 20px;
 }
 
-article button{
+article button {
     width: 100%;
     border: none;
     border-radius: 24px;
     height: 53px;
     padding: 10px;
     font-weight: bold;
-font-size: 20px;
-margin-top: 34px;
-margin-bottom: 20px;
+    font-size: 20px;
+    margin-top: 34px;
+    margin-bottom: 20px;
 }
+
 article a {
     text-decoration: none;
 
     color: #00669F;
 }
 
-.button-group{
+.button-group {
     display: flex;
 }
 
-.btn-gray{
+.btn-gray {
     margin-right: 20px;
 }
 
-footer{
+footer {
     width: 100%;
     position: fixed;
     bottom: 0px;
@@ -201,7 +319,7 @@ footer{
 
 }
 
-footer>.bg-blue{
+footer>.bg-blue {
     width: 1440px;
     margin: 0px auto;
 }
